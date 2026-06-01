@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Agrinho<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#produtos">Produtos & Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="btn-nav" onclick="location.href='#contato'">Fale Conosco</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="tagline">Tema 2026</span>
+            <h1>Agro forte, futuro sustentável</h1>
+            <p>Equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <div class="hero-buttons">
+                <a href="#produtos" class="btn-primary">Ver Produtos</a>
+                <a href="#sobre" class="btn-secondary">Saber Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <p class="subtitle">Conectando você a respostas rápidas, exatas e úteis para o campo.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Nossa missão é unir a força do agronegócio à responsabilidade ecológica. Atuamos com um perfil jovem, sério e focado em inovação, trazendo soluções eficientes para o produtor rural moderno.</p>
+                    <p>Nosso grande diferencial está no atendimento personalizado e na entrega de produtos de altíssima qualidade, garantindo a máxima eficiência com o menor impacto ambiental.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Atendimento Rápido</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Alta</h3>
+                        <p>Qualidade Garantida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="services">
+        <div class="container">
+            <h2>Serviços & Produtos</h2>
+            <p class="subtitle">Soluções de alta qualidade com o suporte que você precisa.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Insumos Sustentáveis</h3>
+                    <p>Produtos de alta performance que respeitam o solo e o ecossistema.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>Consultoria Técnica</h3>
+                    <p>Respostas rápidas e exatas para otimizar a sua produção agrícola.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Tecnologia no Campo</h3>
+                    <p>Ferramentas inovadoras para o monitoramento e gestão da sua lavoura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <p class="subtitle">O equilíbrio entre produção e meio ambiente em imagens.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=500&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=500&q=80');"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Nosso Blog</h2>
+            <p class="subtitle">Informativos e atualizações sobre o futuro do agro.</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h3>O Futuro da Agricultura Sustentável em 2026</h3>
+                    <p>Entenda como as novas tecnologias estão ajudando a produzir mais respeitando a natureza.</p>
+                    <a href="#" class="blog-link">Ler artigo →</a>
+                </article>
+                <article class="blog-card">
+                    <h3>Como Otimizar o Uso de Recursos no Solo</h3>
+                    <p>Dicas práticas e respostas exatas para o manejo inteligente da sua propriedade rural.</p>
+                    <a href="#" class="blog-link">Ler artigo →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <h2>Fale Conosco</h2>
+                <p>Tem alguma dúvida? Deixe sua mensagem ou inscreva-se na nossa newsletter para receber novidades.</p>
+                
+                <a href="https://wa.me/seunumerodeatendimento" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Como podemos te ajudar hoje?" rows="4" required></textarea>
+                <button type="submit" class="btn-submit">Enviar e Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agrinho. Todos os direitos reservados. Agro forte, futuro sustentável.</p>
+    </footer>
+
+</body>
+</html>
